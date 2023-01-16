@@ -4,7 +4,9 @@ import "./App.css";
 function App() {
   const calculateTimeLeft = () => {
     var today = new Date();
-    var targetTime = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 5, 13, 0, 0);
+    var count = 5;
+
+    var targetTime = new Date(2023, today.getMonth(), 19, 13, 0, 0);
 
     var difference = targetTime - today;
     let timeLeft = {};
